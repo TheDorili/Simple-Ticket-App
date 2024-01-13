@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Simple Ticket App"
+        android:textSize="20sp"
+        android:paddingTop="16dp" />
+
+    <Button
+        android:id="@+id/send_message"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:onClick="startConn"
+        android:text="start"
+        app:backgroundTint="#4CAF50"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/view_open_tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Open Tickets"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/view_closed_tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Closed Tickets"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/query_result_text"
+        android:layout_width="298dp"
+        android:layout_height="443dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:text="Query Result:"
+        app:autoSizeTextType="none" />
+
+</LinearLayout>
